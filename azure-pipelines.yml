@@ -44,3 +44,5 @@ stages:
         azureSubscription: $(azureSubscription)
         appName: $(appName)
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+        deployToSlotOrASE: true
+        slotName: 'dev/test'
